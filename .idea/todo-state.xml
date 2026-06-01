@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TodoState">
+    <option name="activeLlmConfigIndex" value="1" />
+    <option name="indentRainbowFileTypes" value="Java,Kotlin,Python,YAML,YML,JSON,CSS,JavaScript,TypeScript,py" />
+    <option name="indentRainbowThickness" value="1" />
+    <option name="llmConfigs">
+      <list>
+        <LLMConfig>
+          <option name="endpoint" value="https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions" />
+          <option name="id" value="c354695c-7b70-4293-afc0-d55455bec5c6" />
+          <option name="model" value="qwen-plus" />
+          <option name="name" value="Qwen" />
+        </LLMConfig>
+        <LLMConfig>
+          <option name="endpoint" value="https://api.deepseek.com/chat/completions" />
+          <option name="id" value="cfa0ba23-d2dc-4e3d-966a-ecf01605c844" />
+          <option name="model" value="deepseek-v4-flash" />
+          <option name="name" value="DeepSeek" />
+        </LLMConfig>
+      </list>
+    </option>
+    <option name="llmPromptTemplate" value="以下是我在项目中的 Git 提交记录，包含不同分支的提交信息：&#10;&#10;请用中文总结{periodName}的工作内容：&#10;1. 按分支分类整理，列出每个分支的改动要点&#10;2. 合并同类项，提炼出主要工作方向&#10;3. 语言简洁，使用 Markdown 格式" />
+    <option name="reminderConfigs">
+      <list>
+        <ReminderConfig>
+          <option name="enabled" value="true" />
+          <option name="id" value="d121db9a-1d52-4a6a-a8e5-37968b72628e" />
+        </ReminderConfig>
+      </list>
+    </option>
+  </component>
+</project>

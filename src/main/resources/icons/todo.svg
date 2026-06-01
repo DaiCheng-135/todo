@@ -1,0 +1,35 @@
+<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with modern gradient -->
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="13" height="13" rx="3" fill="url(#bgGrad)"/>
+    
+    <!-- Git commit graph - simplified -->
+    <g stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.95">
+        <!-- Main vertical line -->
+        <line x1="6.5" y1="2" x2="6.5" y2="11"/>
+        
+        <!-- Branch left -->
+        <path d="M6.5 4.5C6.5 4.5 4 4.5 4 6C4 7.5 6.5 7.5 6.5 7.5" fill="none"/>
+        
+        <!-- Branch right -->
+        <path d="M6.5 6C6.5 6 9 6 9 7.5C9 9 6.5 9 6.5 9" fill="none"/>
+    </g>
+    
+    <!-- Commit dots -->
+    <circle cx="6.5" cy="2.5" r="1" fill="white"/>
+    <circle cx="4" cy="6" r="1" fill="#FFD93D"/>
+    <circle cx="9" cy="7.5" r="1" fill="#FFD93D"/>
+    <circle cx="6.5" cy="10.5" r="1" fill="white"/>
+    
+    <!-- AI sparkle effect -->
+    <g fill="#FFD93D" opacity="0.9">
+        <path d="M2 2.5L2.3 3L2.8 3.2L2.3 3.4L2 3.9L1.7 3.4L1.2 3.2L1.7 3L2 2.5Z"/>
+        <path d="M11 9.5L11.3 10L11.8 10.2L11.3 10.4L11 10.9L10.7 10.4L10.2 10.2L10.7 10L11 9.5Z"/>
+    </g>
+</svg>

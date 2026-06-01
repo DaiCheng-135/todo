@@ -1,0 +1,57 @@
+<idea-plugin>
+    <id>com.todo.plugin</id>
+    <name>Git AI Assistant</name>
+    <version>1.1.0</version>
+    <vendor email="1358065651@qq.com">代成</vendor>
+
+    <description><![CDATA[
+    <h2>Git AI 助手</h2>
+    <p>集成 AI Git 提交总结、待办管理、自定义定时提醒和缩进彩虹线的 IntelliJ IDEA 效率插件。</p>
+    <ul>
+        <li><b>AI Git 提交总结</b> — 连接 LLM 自动生成日报/周报/月报，支持流式和非流式输出</li>
+        <li><b>待办事项管理</b> — 支持优先级、截止日期、标签和到期提醒</li>
+        <li><b>自定义定时提醒</b> — 多提醒独立运行，可自定义标题、内容、间隔和弹窗图片</li>
+        <li><b>缩进彩虹线</b> — 按文件类型配置的彩色缩进参考线</li>
+    </ul>
+    <p>所有标签页内含操作指引，开箱即用。支持 OpenAI 兼容 API（DeepSeek、Qwen 等）。</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <h3>Version 1.1.0</h3>
+    <ul>
+        <li>全新多提醒系统：支持创建多个独立定时提醒</li>
+        <li>LLM 流式输出：AI 总结支持逐字实时输出</li>
+        <li>提醒弹窗支持自定义图片（PNG/JPG/GIF/BMP）</li>
+        <li>提醒列表实时倒计时、单项重置、重置全部</li>
+        <li>修复状态持久化问题，重启不再丢失配置</li>
+        <li>UI 布局优化，提醒独立成标签页</li>
+    </ul>
+
+    <h4>使用说明</h4>
+
+    <p><b>Git 提交总结：</b>选择周期和日期 → 展开 LLM 配置添加 API → 获取提交 → AI 总结（可勾选流式输出）</p>
+    <p><b>待办事项：</b>新增待办设置优先级/截止时间/标签 → 左键切换完成 → 右键编辑删除 → 搜索筛选</p>
+    <p><b>定时提醒：</b>新建提醒填写标题和内容（%d=间隔数）→ 设间隔和单位 → 保存后勾选启用 → 支持多提醒并发</p>
+    <p><b>缩进彩虹：</b>启用 → 调粗细 → 勾选文件类型 → 实时生效</p>
+    <br/>
+    <h3>Version 1.0.0</h3>
+    <ul>
+        <li>AI Git 提交总结（日报/周报/月报）</li>
+        <li>待办事项管理（优先级、截止日期、标签）</li>
+        <li>缩进彩虹线可视化</li>
+        <li>喝水提醒</li>
+    </ul>
+    ]]></change-notes>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Todo Notifications" displayType="BALLOON"/>
+
+        <toolWindow
+                id="Git AI Assistant"
+                anchor="right"
+                icon="/icons/todo.svg"
+                factoryClass="com.example.todo.ui.TodoToolWindowFactory"/>
+    </extensions>
+
+    <depends>com.intellij.modules.platform</depends>
+</idea-plugin>
